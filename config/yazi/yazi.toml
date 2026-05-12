@@ -1,0 +1,17 @@
+[mgr]
+# 三列布局比例: [父目录, 当前目录, 预览]
+ratio = [2, 2, 4]
+
+# Enter 打开图片时用 viu 全屏显示，按回车返回
+[opener]
+view-image = [
+	{ run = 'viu -b -w $(tput cols) -h $(($(tput lines) - 1)) "$1"; read -n 1', desc = "View image", block = true, for = "unix" },
+]
+edit = [
+	{ run = 'nvim "$@"', desc = "Edit (nvim)", block = true, for = "unix" },
+]
+
+[open]
+prepend_rules = [
+	{ mime = "image/*", use = "view-image" },
+]
