@@ -15,7 +15,7 @@ fish 是一个交互式 shell，可以理解为 bash 或 zsh 的替代品。和�
 - 历史补全：输入命令前几个字符，灰色提示之前用过的完整命令，按右方向键采纳
 - 参数补全：tab 键会显示命令的参数列表和说明
 
-![fish 历史补全](image.png)
+![fish 历史补全](https://raw.githubusercontent.com/Fishason/terminal-setup/main/screenshots/01-fish-completion.png)
 
 ### 1.2 我设置的缩写
 
@@ -42,7 +42,7 @@ fish 有 abbreviation（缩写）功能：输入缩写后按空格或回车，�
 
 ## 2. Tmux
 
-### 2.1 是什么 
+### 2.1 是什么
 
 tmux 是终端多路复用工具。它解决三个问题：
 
@@ -54,7 +54,7 @@ tmux 是终端多路复用工具。它解决三个问题：
 
 我用 VS Code Remote 或者在手机上连服务器的时候本来就没多少行高，所以选择了占用更小的 tmux，代价是默认快捷键对手指不友好，需要自己调整。
 
-![tmux 状态栏](image-1.png)
+![tmux 状态栏](https://raw.githubusercontent.com/Fishason/terminal-setup/main/screenshots/02-tmux-status.png)
 
 ### 2.2 我的调整
 
@@ -71,7 +71,7 @@ tmux 默认前缀是 `Ctrl + b`，按起来手指要扭一下。改成 `Alt + c`
 | `Alt + `` ` `` | 弹出 session/窗口选择列表 |
 | `Alt + ]` | 粘贴最近复制的内容 |
 
-![alt text](image-2.png)
+![tmux 多窗口切换](https://raw.githubusercontent.com/Fishason/terminal-setup/main/screenshots/03-tmux-window-switch.png)
 
 **分屏**
 
@@ -92,7 +92,7 @@ tmux 默认前缀是 `Ctrl + b`，按起来手指要扭一下。改成 `Alt + c`
 
 另外做了一个改动：滚轮往下滚到底时自动退出复制模式。tmux 默认进了复制模式后只能按 `q` 或 `Esc` 退出，挺烦的。
 
-![alt text](image-3.png)
+![tmux 复制模式](https://raw.githubusercontent.com/Fishason/terminal-setup/main/screenshots/04-tmux-copy-mode.png)
 
 ### 2.3 配合 fish 缩写
 
@@ -102,7 +102,7 @@ tat 0      # tmux at -t 0
 tls        # tmux ls
 tswitch 1  # tmux switch -t 1
 ```
-™£
+
 ---
 
 ## 3. Yazi
@@ -119,8 +119,9 @@ yazi 是用 Rust 写的终端文件管理器。在没有图形界面的服务器
 - 复制、剪切、粘贴、删除、新建、重命名等文件操作
 - 模糊搜索文件名和文件内容
 
-![alt text](image-4.png)
-![alt text](image-5.png)
+![yazi 三列布局](https://raw.githubusercontent.com/Fishason/terminal-setup/main/screenshots/05-yazi-three-columns.png)
+
+![yazi 文件预览](https://raw.githubusercontent.com/Fishason/terminal-setup/main/screenshots/06-yazi-preview.png)
 
 ### 3.2 我的调整
 
@@ -142,15 +143,13 @@ Neovim 是 vim 的分叉版，向后兼容 vim 的所有键位和命令，但底
 - Treesitter，基于语法树的高亮，比正则高亮准确
 - 异步执行，插件不会卡住编辑
 
-裸 nvim 配置起来比较折磨。我用 LazyVim，一个开箱即用的发行版
+裸 nvim 配置起来比较折磨。我用 LazyVim，一个开箱即用的发行版。
 
-![alt text](image-6.png)
+![LazyVim 主界面](https://raw.githubusercontent.com/Fishason/terminal-setup/main/screenshots/07-lazyvim-dashboard.png)
 
 `ZZ` 是 vim 的传统快捷键，在 Normal 模式按两下大写 Z，相当于 `:wq`。
 
-> 截图 10：nvim Space + e 弹出文件树
-
-### 4.3 我的自定义
+### 4.2 我的自定义
 
 - 逗号 `,` 在 Normal 模式打开文件树（覆盖了 vim 默认的反向 f/F 跳转）
 - `jj` 在 Insert 模式退出到 Normal，不用伸手按 Esc
@@ -162,13 +161,15 @@ Neovim 是 vim 的分叉版，向后兼容 vim 的所有键位和命令，但底
 - 文件树侧栏宽度调到 25 列
 - 装了 yazi.nvim：按 `Space + -` 在 nvim 内部弹出 yazi 浮窗，选中文件直接在 nvim 打开
 
-![alt text](image-7.png)
+![nvim 内嵌 yazi 浮窗](https://raw.githubusercontent.com/Fishason/terminal-setup/main/screenshots/08-nvim-yazi-float.png)
 
-## 6. 配置和一键安装
+---
+
+## 5. 配置和一键安装
 
 完整配置文件、安装脚本、键位速查表都在 GitHub：
 
-> **仓库地址**：`https://github.com/Fishason/terminal-setup`
+> 仓库地址：<https://github.com/Fishason/terminal-setup>
 
 Ubuntu 服务器一行命令安装：
 
@@ -188,6 +189,6 @@ curl -fsSL https://raw.githubusercontent.com/Fishason/terminal-setup/main/instal
 
 ---
 
-- B 站主页：https://space.bilibili.com/385436236
-- 配置仓库：https://github.com/Fishason/terminal-setup
-- 3DS SSH 视频：https://www.bilibili.com/video/BV1BxRCBdEXz/
+- B 站主页：<https://space.bilibili.com/385436236>
+- 配置仓库：<https://github.com/Fishason/terminal-setup>
+- 3DS SSH 视频：<https://www.bilibili.com/video/BV1BxRCBdEXz/>
