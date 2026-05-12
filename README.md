@@ -34,27 +34,6 @@ bash install.sh
 
 完成后重启 shell 或新开终端窗口即可。
 
-## 仓库结构
-
-```
-terminal-setup/
-├── README.md              # 你正在看的这个
-├── bilibili-article.md    # B 站投稿原文
-├── install.sh             # 一键安装脚本
-├── SCREENSHOTS.md         # 截图指引（给作者本人用）
-└── config/
-    ├── tmux/tmux.conf
-    ├── fish/
-    │   ├── config.fish
-    │   └── functions/y.fish
-    ├── yazi/yazi.toml
-    └── nvim/              # LazyVim 完整配置
-        ├── init.lua
-        └── lua/
-            ├── config/    # 自定义 keymaps / options / lazy 启动
-            └── plugins/   # 插件配置覆盖（lualine、snacks、yazi.nvim）
-```
-
 ## 手动安装（一项一项装）
 
 ### 1. Fish
